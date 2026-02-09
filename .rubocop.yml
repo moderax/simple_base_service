@@ -1,0 +1,25 @@
+# Use Standard's RuboCop configuration as the base so `rubocop` follows Standard
+# See https://github.com/testdouble/standard
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  SuggestExtensions: false
+
+inherit_gem:
+  standard: config/base.yml
+
+# Enable RuboCop plugins for RSpec and Rake
+plugins:
+  - rubocop-rspec
+  - rubocop-rake
+
+# Opt into new cops from RuboCop RSpec
+RSpec/IncludeExamples:
+  Enabled: true
+RSpec/LeakyLocalVariable:
+  Enabled: true
+RSpec/Output:
+  Enabled: true
+
+# You may add project-specific overrides below if necessary.
