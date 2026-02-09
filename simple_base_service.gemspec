@@ -5,7 +5,7 @@ require_relative "lib/simple_service/version"
 Gem::Specification.new do |spec|
   spec.name = "simple_base_service"
   spec.version = SimpleService::VERSION
-  spec.authors = ["Emseh"]
+  spec.authors = ["ModeraX"]
   spec.email = ["emseh@protonmail.com"]
 
   spec.summary = "Tiny framework for plain Ruby service objects"
